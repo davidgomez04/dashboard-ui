@@ -1,17 +1,19 @@
-import {nextui} from '@nextui-org/theme';
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
+import daisyui from 'daisyui';
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(card|ripple).js"
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {},
   },
-  darkMode: "class",
-  plugins: [nextui()],
+  // darkMode: 'class',
+  plugins: [daisyui],
+  daisyui: {
+    themes: ['light', 'night', 'cupcake', 'cyberpunk', 'retro'],
+  },
 };
 export default config;
