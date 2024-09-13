@@ -1,4 +1,4 @@
-import { getAllTodos } from "@/api";
+import { getAllTodos } from "../app/api/todo/route";
 import AddTask from "./AddTask";
 import TodoList from "./TodoList";
 

@@ -3,7 +3,7 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import TodoModal from "./TodoModal";
 import { FormEventHandler, useState } from "react";
-import { addTodo } from "@/api";
+import { addTodo } from "../app/api/todo/route";
 import { useRouter } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 

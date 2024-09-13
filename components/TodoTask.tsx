@@ -5,7 +5,7 @@ import { FormEventHandler, useState } from "react";
 import { FiEdit, FiTrash2 } from "react-icons/fi";
 import TodoModal from "./TodoModal";
 import { useRouter } from "next/navigation";
-import { deleteTodo, editTodo } from "@/api";
+import { deleteTodo, editTodo } from "../app/api/todo/route";
 
 interface TaskProps {
   task: ITask;
